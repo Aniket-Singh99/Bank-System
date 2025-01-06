@@ -1,3 +1,7 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="com.technoGeeks.bank_management.module.User" %>
+<%@ page import="javax.servlet.http.HttpSession" %>
+<%@ page import="java.text.NumberFormat" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +12,17 @@
   <script src="script.js"></script> <!-- Include the JavaScript file -->
 </head>
 <body>
+<%
+// Retrieve the user session and balance
+HttpSession session = request.getSession();
+User user = (User ) session.getAttribute("loggedInUser "); // Assuming you store the user in session
+double balance = user != null ? user.getBalance() : 0.0; // Replace with actual method to get balance
+String formattedBalance = NumberFormat.getCurrencyInstance().format(balance);
+%>
 <div class="form-container">
   <h1>Balance Enquiry</h1>
-  <p>Your current balance is: <strong>$1,500.00</strong></p> <!-- Replace with dynamic balance if needed -->
-  <button onclick="location.href='main.html'">Back to Main Menu</button>
+  <p>Your current balance is: <strong><%= formattedBalance %></strong></p>
+  <button onclick="location.href='main.jsp'">Back to Main Menu</button> <!-- Change to main.jsp if needed -->
 </div>
 </body>
 </html>
