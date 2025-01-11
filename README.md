@@ -49,3 +49,11 @@ A Maven-based Java application that simulates core banking operations. It enable
 ## screenshots
 
 ![Screenshot_6-1-2025_204252_localhost](https://github.com/user-attachments/assets/9bcd187e-90c4-40dc-9eb7-d67b930af5e0)
+
+![Screenshot_6-1-2025_204323_localhost](https://github.com/user-attachments/assets/719e8bd8-ec67-4028-9c2c-c58e2dc18c77)
+
+![Screenshot_6-1-2025_204410_localhost](https://github.com/user-attachments/assets/8a84e8d7-b031-4da9-9f96-6f88d14fd463)
+
+![Screenshot_6-1-2025_204430_localhost](https://github.com/user-attachments/assets/868ba1d3-90fb-42c4-b9bd-6d43a4db21fb)
+
+![Screenshot_6-1-2025_205051_localhost](https://github.com/user-attachments/assets/2410d926-61ec-4dd6-8fc8-6d456adce9e7)
